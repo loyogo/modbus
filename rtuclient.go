@@ -33,8 +33,8 @@ func NewRTUClientHandler(address string) *RTUClientHandler {
 	return handler
 }
 
-func NewRTUPackager(slaveID byte) *RTUPackager {
-	return &RTUPackager{SlaveId: slaveID}
+func NewRTUPackager(slaveID byte) *rtuPackager {
+	return &rtuPackager{SlaveId: slaveID}
 }
 
 // RTUClient creates RTU client with default handler and given connect string.
